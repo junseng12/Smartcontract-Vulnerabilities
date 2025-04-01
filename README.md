@@ -23,26 +23,41 @@ This structure is structured so that you can **understand structurally whether t
 
 """
 
-# 🔁 Reentrancy Special
+---
 
-Reentrancy is a **certification** that reentry occurs again in the same call during an external call in smart contract tracking and **processes the state**.
+# 🚧 Upcoming Vulnerability Practices & Learning Goals
 
-## 1️⃣ Understanding the concept
+This repository aims to **systematically analyze and simulate smart contract vulnerabilities**.  
+For each topic, we follow a structured process:
 
-- When there is an external call, the structure is re-called again before the call is completed
-- Representative: The DAO (2016)
+1. **🧠 Concept Understanding**  
+   Grasp the vulnerability’s theoretical and practical aspects  
+   → attack flow, affected patterns, real-world examples
 
-## 2️⃣ Code analysis
+2. **🔍 Code Analysis**  
+   Understand vulnerable code structures and critical mistakes
 
-`Vulnerable.sol` is designed to change the state after an external call, so it's annoying.
+3. **🧪 Exploit Simulation**  
+   Perform hands-on attack using Hardhat test environment
 
-## 3️⃣ Attacked
+4. **🛡️ Mitigation Techniques**  
+   Discuss prevention methods (design patterns, libraries, etc.)
 
-Using the fallback() function in `AttackReentrancy.sol`, reentrancy is performed and funds are repeatedly withdrawn.
+---
 
-## 4️⃣ Action
+## 🔓 Planned Topics (to be updated)
 
-- Process state changes first, then external calls
-- Use a structure like `nonReentrant` (OpenZeppelin ReentrancyGuard)
+| Vulnerability              | Status       |
+| -------------------------- | ------------ |
+| Reentrancy                 | ✅ Completed |
+| Delegatecall Abuse         | 🔜 Planned   |
+| Denial of Service          | 🔜 Planned   |
+| Access Control Flaws       | 🔜 Planned   |
+| Integer Overflow/Underflow | 🔜 Planned   |
+| tx.origin Pitfall          | 🔜 Planned   |
 
-All code is verified by processing `/contracts`, and can be tested via Hardhat.
+Each vulnerability will be explored in a **dedicated subdirectory** within `/contracts/`.
+
+> 📂 Example: `contracts/delegatecall`, `contracts/access-control`
+
+Stay tuned for ongoing updates! 🚀
