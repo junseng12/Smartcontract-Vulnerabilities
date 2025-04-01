@@ -1,0 +1,8 @@
+require("@nomicfoundation/hardhat-toolbox");
+
+module.exports = {
+  solidity: "0.8.20",
+  paths: {
+    sources: "./contracts", // 모든 하위 폴더 포함됨!
+  },
+};
