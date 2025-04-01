@@ -1,45 +1,45 @@
-# 📚 Blockchain Security: 계층 기반 개념 정리
+# 📚 Blockchain Security: Location-based Conceptual Summary
 
-블록체인은 단일 기술이 아니라 여러 계층이 협력하여 동작하는 복합 시스템입니다.  
-보안도 계층별로 다양한 위협 요소를 갖고 있으며, 각 계층을 이해해야 전체 보안 전략을 세울 수 있습니다.
-
----
-
-## 🧱 블록체인 7계층 구조 및 취약점 예시
-
-| 계층 | 설명 | 주요 취약점 예시 |
-|------|------|------------------|
-| **응용 계층** | 사용자와 상호작용하는 UI, Web3, API | XSS, 인젝션, 프론트러닝 |
-| **컨트랙트 계층** | 스마트 컨트랙트의 로직이 위치 | Reentrancy, delegatecall, Access Control 오류 |
-| **컴퓨팅 계층** | EVM 또는 WASM 상에서 상태 전이 처리 | 가스 한도 문제, 상태 불일치, VM 구현 오류 |
-| **합의 계층** | 블록 생성/확정 로직, PoS, BFT 등 | 블록 타임 조작, 순서 조작 |
-| **데이터 계층** | 블록/트랜잭션의 저장 구조 | 오라클 오류, 조작된 블록 참조 |
-| **네트워크 계층** | 노드 간 통신, 트랜잭션 전파 | MEV, 트랜잭션 스니핑, 딜레이 공격 |
-| **인프라 계층** | 실제 노드, RPC 서버, 오라클 | 키 탈취, 오라클 해킹, RPC 노드 다운 |
+Blockchain is an artificial system that works in cooperation with various aspects, not technology.
+Security also involves various elements related to relationships, and understanding each part is necessary to establish an overall security strategy.
 
 ---
 
-이 구조는 단순 취약점 암기보다, **공격이 어느 경로로 침투할 수 있는지 구조적으로 이해**하는 데 도움을 줍니다.
+## 🧱 Blockchain 7-layer structure and examples
+
+| Cons | Explanation | Major examples |
+|------|------|------|
+| **Application section** | User and block combination UI, Web3, API | XSS, injection, front-learning |
+| **Contract Cons** | Smart track equilibrium location | Reentrancy, delegated call, access control error |
+| **Computation section** | EVM or WASM state transition handling | Gas limit issue, state maintenance, VM existence error |
+| **Consensus section** | Block generation/confirmation structure, PoS, BFT, etc. | Communication with blockchain |
+| **Data section** | Block/transaction storage structure | If an error occurs, refer to the block |
+| **Network location** | Police station, Police station | MEV, Processor sniffing, Delay attack |
+| **Inside** | Actual work, RPC server, Work | Key theft, Operation execution, RPC operation |
+
+---
+
+This structure is structured so that you can **understand structurally whether the pointer can match any location** rather than actually experimenting.
 
 """
 
-reentrancy_md = """ #🔁 Reentrancy 취약점
+# 🔁 Reentrancy Special
 
-Reentrancy는 스마트 컨트랙트에서 외부 호출 중 다시 동일 함수에 재진입이 발생해 **상태를 조작당하는 취약점**입니다.
+Reentrancy is a **certification** that reentry occurs again in the same call during an external call in smart contract tracking and **processes the state**.
 
-## 1️⃣ 개념 이해
-- 외부 호출이 일어났을 때, 호출이 끝나기 전에 다시 재호출이 가능한 구조
-- 대표 사례: The DAO 해킹 (2016)
+## 1️⃣ Understanding the concept
+- When there is an external call, the structure is re-called again before the call is completed
+- Representative: The DAO (2016)
 
-## 2️⃣ 취약 코드 분석
-`Vulnerable.sol`은 외부 호출 후 상태 변경을 하도록 설계되어 있어 공격에 취약합니다.
+## 2️⃣ Code analysis
+`Vulnerable.sol` is designed to change the state after an external call, so it's annoying.
 
-## 3️⃣ 공격 재현
-`AttackReentrancy.sol`에서 fallback() 함수를 활용해 재진입하며 자금을 반복해서 인출합니다.
+## 3️⃣ Attacked
+Using the fallback() function in `AttackReentrancy.sol`, reentrancy is performed and funds are repeatedly withdrawn.
 
-## 4️⃣ 방어 전략
-- 상태 변경을 먼저 처리한 후 외부 호출
-- `nonReentrant` 같은 락 구조 사용 (OpenZeppelin ReentrancyGuard)
+## 4️⃣ Action
+- Process state changes first, then external calls
+- Use a structure like `nonReentrant` (OpenZeppelin ReentrancyGuard)
 
-모든 코드는 `/contracts`에 정리되어 있으며, Hardhat을 통해 테스트 가능합니다.
+All code is verified by processing `/contracts`, and can be tested via Hardhat.
 """
