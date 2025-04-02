@@ -21,8 +21,6 @@ Security also involves various elements related to relationships, and understand
 
 This structure is structured so that you can **understand structurally whether the pointer can match any location** rather than actually experimenting.
 
-"""
-
 ---
 
 # 🚧 Upcoming Vulnerability Practices & Learning Goals
