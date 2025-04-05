@@ -1,0 +1,113 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\contracts\\transparent-proxy\\LogicV1.sol": {
+      "lastModificationDate": 1743836611662,
+      "contentHash": "dbd65b65aa9e93d0c3ed5e047c945642",
+      "sourceName": "contracts/transparent-proxy/LogicV1.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LogicV1"
+      ]
+    },
+    "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\contracts\\transparent-proxy\\LogicV2.sol": {
+      "lastModificationDate": 1743833456927,
+      "contentHash": "50fcf8430a5ef5cc9e9b564c3d0e19a4",
+      "sourceName": "contracts/transparent-proxy/LogicV2.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LogicV2"
+      ]
+    },
+    "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\contracts\\transparent-proxy\\Proxy.sol": {
+      "lastModificationDate": 1743835986325,
+      "contentHash": "495b6b48bd8e652c52d380c636838496",
+      "sourceName": "contracts/transparent-proxy/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    }
+  }
+}
