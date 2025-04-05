@@ -22,6 +22,8 @@
 
 ## 🧪 상태 변화 로그
 
+![alt text](../../images/proxypattern1.PNG)
+
 ```text
 Deployer: 0xf39F...
 LogicV1 deployed at: 0x5FbD...
