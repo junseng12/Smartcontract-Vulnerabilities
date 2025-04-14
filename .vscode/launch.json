@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Debug MinimalProxy with Hardhat",
+      "cwd": "${workspaceFolder}/2-Proxy-Pattern",
+      "program": "${workspaceFolder}/2-Proxy-Pattern/node_modules/hardhat/internal/cli/cli.js",
+      "args": ["run", "--network", "hardhat", "./scripts/minimalTest.js"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}
