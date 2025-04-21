@@ -1,6 +1,78 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
+    "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\contracts\\create2-clone\\DeterministicFactory.sol": {
+      "lastModificationDate": 1745230860866,
+      "contentHash": "11d786fbe5e2d1707fc2e2e0dc0b8818",
+      "sourceName": "contracts/create2-clone/DeterministicFactory.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "DeterministicFactory"
+      ]
+    },
+    "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\contracts\\create2-clone\\Implementation.sol": {
+      "lastModificationDate": 1745229937428,
+      "contentHash": "a4b37a66d41db6c8a9415e3e7043850e",
+      "sourceName": "contracts/create2-clone/Implementation.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Implementation"
+      ]
+    },
     "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\contracts\\minimal-proxy\\Implementation.sol": {
       "lastModificationDate": 1743865537188,
       "contentHash": "54696044713b1de3c178e6c259bcc3ab",
@@ -38,7 +110,7 @@
       ]
     },
     "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\contracts\\minimal-proxy\\MinimalProxyFactory.sol": {
-      "lastModificationDate": 1743868805909,
+      "lastModificationDate": 1743872819126,
       "contentHash": "4ecdd30ca2d5d80e8adb05365ea0085b",
       "sourceName": "contracts/minimal-proxy/MinimalProxyFactory.sol",
       "solcConfig": {
@@ -73,6 +145,119 @@
       ],
       "artifacts": [
         "MinimalProxyFactory"
+      ]
+    },
+    "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\node_modules\\@openzeppelin\\contracts\\proxy\\Clones.sol": {
+      "lastModificationDate": 1743856332791,
+      "contentHash": "89823e775b21a353ef68a3f771fdca25",
+      "sourceName": "@openzeppelin/contracts/proxy/Clones.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Create2.sol",
+        "../utils/Errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Clones"
+      ]
+    },
+    "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\node_modules\\@openzeppelin\\contracts\\utils\\Create2.sol": {
+      "lastModificationDate": 1743856332837,
+      "contentHash": "841323ddbb94316c3f9ae8a19ce080ff",
+      "sourceName": "@openzeppelin/contracts/utils/Create2.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Errors.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Create2"
+      ]
+    },
+    "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\node_modules\\@openzeppelin\\contracts\\utils\\Errors.sol": {
+      "lastModificationDate": 1743856334509,
+      "contentHash": "6b5eac2b85500c3012977849cfd633d8",
+      "sourceName": "@openzeppelin/contracts/utils/Errors.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Errors"
       ]
     },
     "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\contracts\\transparent-proxy\\LogicV1.sol": {
@@ -219,119 +404,6 @@
       ],
       "artifacts": [
         "console"
-      ]
-    },
-    "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\node_modules\\@openzeppelin\\contracts\\proxy\\Clones.sol": {
-      "lastModificationDate": 1743856332791,
-      "contentHash": "89823e775b21a353ef68a3f771fdca25",
-      "sourceName": "@openzeppelin/contracts/proxy/Clones.sol",
-      "solcConfig": {
-        "version": "0.8.20",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../utils/Create2.sol",
-        "../utils/Errors.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "Clones"
-      ]
-    },
-    "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\node_modules\\@openzeppelin\\contracts\\utils\\Create2.sol": {
-      "lastModificationDate": 1743856332837,
-      "contentHash": "841323ddbb94316c3f9ae8a19ce080ff",
-      "sourceName": "@openzeppelin/contracts/utils/Create2.sol",
-      "solcConfig": {
-        "version": "0.8.20",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./Errors.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "Create2"
-      ]
-    },
-    "C:\\Users\\JUNSEUNG\\OneDrive - 아주대학교\\바탕 화면\\이준승_블록체인\\Smart-contract-Security\\2-Proxy-Pattern\\node_modules\\@openzeppelin\\contracts\\utils\\Errors.sol": {
-      "lastModificationDate": 1743856334509,
-      "contentHash": "6b5eac2b85500c3012977849cfd633d8",
-      "sourceName": "@openzeppelin/contracts/utils/Errors.sol",
-      "solcConfig": {
-        "version": "0.8.20",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "Errors"
       ]
     }
   }

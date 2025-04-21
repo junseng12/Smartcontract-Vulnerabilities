@@ -5,7 +5,9 @@ async function main() {
   console.log("👷 Deployer:", await deployer.getAddress());
 
   // 1. Implementation 컨트랙트 배포
-  const Impl = await ethers.getContractFactory("Implementation");
+  const Impl = await ethers.getContractFactory(
+    "contracts/minimal-proxy/Implementation.sol:Implementation"
+  );
   const impl = await Impl.deploy();
   await impl.waitForDeployment();
   console.log("✅ Implementation deployed:", await impl.getAddress());
@@ -25,7 +27,10 @@ async function main() {
   console.log("📦 Clone deployed at:", cloneAddress);
 
   // 5. clone 인터페이스로 연결
-  const clone = await ethers.getContractAt("Implementation", cloneAddress);
+  const clone = await ethers.getContractAt(
+    "contracts/minimal-proxy/Implementation.sol:Implementation",
+    cloneAddress
+  );
 
   // 6. clone 초기화
   await clone.initialize(await deployer.getAddress(), 123);
